@@ -1,0 +1,14 @@
+@import 'base/normalize';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/globales';
+@import 'base/utilidades';
+@import 'base/_botones';
+
+@import 'layout/navbar';
+@import 'layout//inicio/presentacion';
+@import 'layout//inicio/propuestas';
+@import 'layout//inicio/conoceme';
+@import 'layout//inicio/ejes';
+@import 'layout//ejes_y_principios/ejesPrincipios';
+@import 'layout//propuestas/propuestas';
