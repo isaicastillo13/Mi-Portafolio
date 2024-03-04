@@ -35,14 +35,15 @@ h1, h2, h3 {
     margin: calc($separacion / 2) 0;
     font-weight: 700;
     text-align: center;
+    color: $negro;
     
 }
 
 h1 {
-    font-size: 3.8rem;
+    font-size: 16rem;
 }
 h2 {
-    font-size: 3.4rem;
+    font-size: 10rem;
 }
 h3 {
     font-size: 3rem;
@@ -50,16 +51,5 @@ h3 {
 h4 {
     font-size: 2rem;
     font-weight: 700;
-}
-
-
-
-.img-bgAzul{
-    //background-color: $azul;
-    background-color: $celeste;
-}
-.img-bgNaranja{
-    //background-color: $naranjaFuerte;
-    background-color: $naranjaClaro;
 }
 

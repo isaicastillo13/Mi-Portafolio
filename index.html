@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/css/app.css">
     <title>Mi Portafolio</title>
 </head>
+
 <body>
-    
+    <main>
+        <nav class="navbar">
+            <a href="">
+                <img src="" alt="logo del pagina">
+            </a>
+            <div class="nav__menu--end">
+                <input type="button" value="Menu" onclick="abrirMenu()">
+                <a href="#">All My Works</a>
+            </div>
+        </nav>
+
+        <div class="overlay" id="overlay">
+            <div class="overlay-content">
+                <input type="button" value="X" onclick="cerrarMenu()">
+                    <a href="#">All My Works</a>
+                    <a href="#">Sobre Mi</a>
+                    <a href="#">Habilidades</a>
+                    <a href="#">Contacto</a>
+                </div>
+        </div>
+        <section class="presentacion">
+                <h2 class="presentacion__titulo">ISAIAS CASTILLO</h2>
+                <p class="presentacion__slogan">Desarrollador web apasionado por la creación de experiencias digitales impactantes. Mi objetivo es combinar creatividad y habilidades técnicas para construir sitios web que destaquen y cautiven. ¡Hagamos realidad tu visión en línea!</p>
+                    <div class="presentacion__enlaces">
+                        <input href="" class="btn presentaion__btn" type="button" value="CONTACTAR">
+                        <a href="#">All My Works</a>
+                    </div>                
+            </div>             
+        </section>
+    </main>
+    <script src="build/js/bundle.min.js"></script>
 </body>
+
 </html>
