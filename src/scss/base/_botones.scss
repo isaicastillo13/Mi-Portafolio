@@ -1,1 +1,20 @@
 
+.btn {
+    width: 209px;
+    height: 40px;
+    border-radius: 280px;
+    border: none;
+    color: $blanco;
+    font-family: $fuente-principal;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgba(255, 105, 95, 1) 0%, rgba(227, 23, 10, 1) 100%);
+    transition: background 1s ease;
+    &:hover{
+        cursor: pointer;
+        background: linear-gradient(90deg, rgba(248,71,59,1) 0%, rgba(193,31,20,1) 100%);
+    }
+}
+
+.proyecto__btn{
+    margin-bottom: 20px;
+}

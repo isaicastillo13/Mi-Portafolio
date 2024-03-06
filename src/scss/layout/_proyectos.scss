@@ -1,0 +1,63 @@
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $negro;
+
+    a:visited {
+        color: $gris;
+    }
+
+    .enlace__pequenio,
+    .enlace__grande {
+        text-decoration: none;
+        font-family: $fuente-principal;
+        font-weight: bold;
+        color: $gris;
+    }
+
+    .enlace__pequenio {
+        font-size: 40px;
+    }
+
+    .enlace__pequenio--arriba,
+    .enlace__grande--arriba,
+    .enlace__grande--abajo,
+    .enlace__pequenio--abajo {
+        position: relative;
+    }
+
+    .enlace__grande {
+        font-size: 68px;
+        &--abajo {
+            right: 5%;
+            margin: 0;
+        }
+    }
+
+    .enlace__pequenio--abajo {
+        top: -35px;
+        left: 15%;
+        margin: 0;
+    }
+
+    h2 {
+        color: $blanco;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        margin: 0;
+    }
+
+    .mockups {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .proyecto__mockup {
+        transition: width .5s;
+        &:hover {
+            width: 105%;
+            height: auto;
+        }
+    }
+}

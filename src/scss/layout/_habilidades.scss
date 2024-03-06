@@ -1,0 +1,51 @@
+.habildades {
+    h2 {
+        color: $negro;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        margin: 0;
+    }
+
+    .habilidades__presentacion,
+    .habilidades__herramientas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 427px;
+        height: 424px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin: 5px;
+    }
+
+    .contenedor__imagen {
+        position: relative;
+        display: inline-block;
+    }
+
+    .texto {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 48px;
+        text-align: center;
+        z-index: 1;
+        /* Asegura que el texto esté sobre la imagen */
+    }
+
+    .habilidades__herramientas {
+        margin: 30px 0;
+
+        img {
+            width: 101px;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+}
