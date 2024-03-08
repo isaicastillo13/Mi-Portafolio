@@ -1,0 +1,49 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 5px;
+    .footer__redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .redes__logos{
+            display: flex;
+            flex-direction: row;
+            img{
+                width: 60px;
+                height: 60px;
+                margin: 5px;
+            }
+        }
+        
+    }
+
+    .footer__contacto{
+        a{
+            text-decoration: none;
+            color: $negro;
+        }
+    }
+
+    .footer_menu{
+        display: flex;
+        flex-direction: column;
+        a{
+            color: $negro;
+        }
+    }
+}
+
+.footer__copyright{
+    padding: 10px;
+    text-align: center;
+    background-color: $grisClaro;
+    color: $negro;
+    font-weight: bold;
+    span{
+        background: linear-gradient(90deg, rgba(248, 71, 59, 1) 0%, rgba(193, 31, 20, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

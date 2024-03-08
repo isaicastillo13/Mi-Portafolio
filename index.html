@@ -11,9 +11,9 @@
 <body>
     <main>
         <nav class="navbar">
-            <a href="">
+            <!-- <a href="">
                 <img src="" alt="logo del pagina">
-            </a>
+            </a> -->
             <div class="nav__menu--end">
                 <input type="button" value="Menu" onclick="abrirMenu()">
                 <a href="#">All My Works</a>
@@ -30,17 +30,17 @@
             </div>
         </div>
 
-        <section class="presentacion">
+        <section class="presentacion" id="presentacion">
             <h2 class="presentacion__titulo">ISAIAS CASTILLO</h2>
             <p class="presentacion__slogan">Desarrollo web y diseño de vanguardia para crear páginas web excepcionales.
                 ¡Programación creativa para dar vida a tus ideas en línea!</p>
             <div class="presentacion__enlaces">
                 <input href="" class="btn presentaion__btn" type="button" value="CONTACTAR">
-                <a href="#">All My Works</a>
+                <a href="#" class="enlace">All My Works</a>
             </div>
             </div>
         </section>
-        <section class="proyectos">
+        <section class="proyectos" id="proyectos">
                 <h2 class="proyecto__titulo">
                     VISITA MIS PROYECTOS
                 </h2>
@@ -61,7 +61,7 @@
             <input class="btn proyecto__btn" type="button" value="VER MAS">
         </section>
 
-        <section class="habildades">
+        <section class="habildades" id="habildades">
             <h2 class="habilidades__titulo">WHAT I DO FOR YOU?</h2>
             <div class="habilidades__presentacion">
                 <div class="contenedor__imagen">
@@ -91,6 +91,36 @@
                 <img src="build/img/Logowix.webp" alt="">
             </div>
         </section>
+        <section class="contacto" id="contacto">
+            <h2 class="contacto__titulo">CONTACTO<img src="src/gift/giftEscribiendo.gif" alt="git escribiendo" class="contacto__icono"></h2>
+            <p class="contacto__texto">
+                ¿Listo para impulsar tu presencia en línea?.<br>
+                <!-- Diseño y desarrollo soluciones a medida para resaltar tu marca en línea. -->
+                Ponte en contacto conmigo hoy y comencemos a construir juntos algo increíble para tu negocio o proyecto personal. ¡Estoy emocionado de escuchar tus ideas!</p>
+            <input type="button" class="btn contacto__btn" value="CONTACTAR">
+        </section>
+        <section class="footer">
+            <div class="footer__redes">
+                <h3 class="redes__titulo">REDES SOCIALES</h3>
+                <div class="redes__logos">
+                <a href=""><img src="build/img/logoLinkedin.webp" alt="logo de linkedin"></a>
+                <a href=""><img src="build/img/logoGitHub.webp" alt="logo de github"></a>
+                <a href=""><img src="build/img/logoInstagram.webp" alt="logo de instagram"></a>
+            </div>
+            </div>
+            <div class="footer__contacto">
+                <h3 class="contacto__titulo">CONTACTO</h3>
+                <a href="mailto:isaiascastillo530@gmail.com">isaiascastillo530@gmail.com</a>
+            </div>
+            <div class="footer_menu">
+                <h3 class="menu__titulo">MENU</h3>
+                    <a href="#presentacion">Inicio</a>
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#habilidades">Habilidades</a>
+                    <a href="#contacto">Contacto</a>                
+            </div>
+        </section>
+        <div class="footer__copyright">SITIO WEB DESARROLLADO POR <span class="copyright__nombre--rojo">ISAIAS CASTILLO</spancla></div>
     </main>
     <script src="build/js/bundle.min.js"></script>
 </body>

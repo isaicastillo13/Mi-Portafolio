@@ -1,0 +1,34 @@
+.contacto{
+    background-color: $gris;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    .contacto__titulo{
+        display: flex;
+        justify-content: center;
+    }
+    h2{
+        margin: 0;
+        color: $blanco;
+    }
+
+    .contacto__icono{
+        width: 100px;
+        height:  100px;
+        align-self: center;
+        
+    }
+
+    .contacto__texto{
+        color: $blanco;
+        position: relative;
+        top:-25px
+    }
+    .contacto__btn{
+        margin-bottom: 30px;
+    }
+
+
+}
