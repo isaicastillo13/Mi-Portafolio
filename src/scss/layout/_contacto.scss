@@ -15,12 +15,11 @@
     }
 
     .contacto__icono{
-        width: 100px;
-        height:  100px;
+        width: 50px;
+        height:  50px;
         align-self: center;
         
     }
-
     .contacto__texto{
         color: $blanco;
         position: relative;
@@ -28,6 +27,15 @@
     }
     .contacto__btn{
         margin-bottom: 30px;
+    }
+
+    @include tablet{
+        .contacto__icono{
+            width: 100px;
+            height:  100px;
+            align-self: center;
+            
+        }
     }
 
 

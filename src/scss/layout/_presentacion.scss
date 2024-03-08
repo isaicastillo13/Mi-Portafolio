@@ -1,5 +1,6 @@
+// Estas lineas siempre se ejecuentan para todas las pantallas
 p {
-    width: 50%;
+    width: 90%;
     text-align: center;
 }
 
@@ -7,6 +8,10 @@ h2 {
     margin: 0;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
+// hasta aqui
+
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -39,6 +44,7 @@ h2 {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .overlay-content {
@@ -47,7 +53,7 @@ h2 {
     height: 100%;
     display: flex;
     flex-direction: column;
-    font-size: 100px;
+    font-size: 50px;
 
     a {
         font-family: $fuente-principal;
@@ -66,7 +72,7 @@ h2 {
         text-align: end;
         background: none;
         border: none;
-        color: $blanco;
+        color: $negro;
         font-size: 30px;
         font-weight: bold;
         padding: 10px;
@@ -78,7 +84,7 @@ h2 {
 }
 
 .presentacion {
-    background-image: url(/build/img/presentacion__fondo.svg);
+    background-image: url(../../../build/img/presentacion__fondo.svg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
@@ -88,7 +94,18 @@ h2 {
     justify-content: center;
     align-items: center;
 
-    .presentacion__enlaces a {
+    
+
+    .presentacion__enlaces{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .presentacion__enlaces {
+
+        a{
         font-family: $fuente-principal;
         font-weight: bold;
         color: $gris;
@@ -97,11 +114,64 @@ h2 {
         font-weight: bold;
         padding: 10px;
         transition:ease-in .2s;
+        width: 209px;
+        text-align: center;
+        margin-top: 10px;
 
         &:hover{
             cursor: pointer;
             background-color: $gris;
             color: $blanco;
         }
+        }
+        
+
+        .presentacion__btn{
+            color: $blanco;
+            border: none;
+        }
     }
+
+    
+}
+
+// para que se ejecute este pedazo de codigo el tamaño minimo de la pantalla debe ser 768px
+@include tablet {
+    
+        h2{
+            font-size: 8rem;
+        }
+
+        p {
+            width: 70%;
+        }
+
+        .overlay-content {
+            font-size: 100px;
+        }
+
+        .presentacion{
+        .presentacion__enlaces{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            a{
+                margin: 0 10px;
+            }
+        }
+    }
+    
+}
+
+@include desktop {
+    h2{
+        font-size: 10rem;
+    }
+
+    p {
+        width: 50%;
+    }
+    
 }

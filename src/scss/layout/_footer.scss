@@ -1,8 +1,9 @@
 .footer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    margin: 0 5px;
+    align-items: center;
+    ext-align: center;
     .footer__redes{
         display: flex;
         flex-direction: column;
@@ -32,6 +33,13 @@
         a{
             color: $negro;
         }
+    }
+
+    @include tablet{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 5px;
     }
 }
 

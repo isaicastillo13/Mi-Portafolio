@@ -18,7 +18,7 @@
     }
 
     .enlace__pequenio {
-        font-size: 40px;
+        font-size: 15px;
     }
 
     .enlace__pequenio--arriba,
@@ -29,15 +29,12 @@
     }
 
     .enlace__grande {
-        font-size: 68px;
-        &--abajo {
-            right: 5%;
-            margin: 0;
-        }
+        font-size: 20px;
+        margin: 0;
     }
 
     .enlace__pequenio--abajo {
-        top: -35px;
+        top: -15px;
         left: 15%;
         margin: 0;
     }
@@ -48,7 +45,7 @@
 
     .mockups {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .proyecto__mockup {
@@ -56,6 +53,48 @@
         &:hover {
             width: 105%;
             height: auto;
+        }
+    }
+}
+
+@include tablet{
+    .proyectos{
+        .mockups{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .enlace__pequenio {
+            font-size: 20px;
+        }
+
+        .enlace__pequenio--abajo {
+            top: -25px;
+        }
+
+        .enlace__grande {
+            font-size: 40px;
+        }
+    }
+}
+
+@include desktop{
+    .proyectos{
+        .mockups{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .enlace__pequenio {
+            font-size: 40px;
+        }
+
+        .enlace__pequenio--abajo {
+            top: -25px;
+        }
+
+        .enlace__grande {
+            font-size: 68px;
         }
     }
 }
